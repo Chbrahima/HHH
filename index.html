@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pressy - Laundry Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                light: '#3b82f6', // blue-500
+                DEFAULT: '#2563eb', // blue-600
+                dark: '#1d4ed8' // blue-800
+              },
+              secondary: {
+                light: '#f0f9ff', // blue-50
+                DEFAULT: '#dbeafe', // blue-200
+                dark: '#bfdbfe' // blue-300
+              },
+              background: {
+                light: '#f8fafc', // slate-50
+                dark: '#1e293b' // slate-800
+              },
+              foreground: {
+                light: '#ffffff',
+                dark: '#0f172a' // slate-900
+              },
+              text_primary: {
+                light: '#0f172a', // slate-900
+                dark: '#f8fafc' // slate-50
+              },
+              text_secondary: {
+                light: '#64748b', // slate-500
+                dark: '#94a3b8' // slate-400
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
